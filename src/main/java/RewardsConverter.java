@@ -17,4 +17,19 @@ public class RewardsConverter {
         var rewardsValue = new RewardValue(cashValue);
         System.out.println("$" + input_value + " is worth " + rewardsValue.getMilesValue() + " miles");
     }
+
+    static class RewardValue {
+        double value;
+        public RewardValue(double v){
+            value =v;
+        }
+
+        public double getCashValue(){
+            return (value*.0035);
+        }
+
+        public double getMilesValue(){
+            return (value/.0035);
+        }
+    }
 }
