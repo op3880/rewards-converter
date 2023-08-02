@@ -24,7 +24,6 @@ public class RewardValueTests {
         var rewardValue=new RewardsConverter.RewardValue(cashValue);
         System.out.println("$"+ cashValue+" is equal to "+rewardValue.getMilesValue()+" miles.");
     }
-
     @Test
     void convert_from_miles_to_cash() {
         int mileValue=10000;
