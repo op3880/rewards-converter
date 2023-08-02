@@ -20,12 +20,15 @@ public class RewardValueTests {
 
     @Test
     void convert_from_cash_to_miles() {
-        assert false;
+        double cashValue=100;
+        var rewardValue=new RewardsConverter.RewardValue(cashValue);
+        System.out.println("$"+ cashValue+" is equal to "+rewardValue.getMilesValue()+" miles.");
     }
 
     @Test
     void convert_from_miles_to_cash() {
-        assert false;
+        int mileValue=10000;
+        var rewardValue=new RewardsConverter.RewardValue(mileValue);
+        System.out.println(mileValue+" miles is equal to $"+rewardValue.getCashValue()+".");
     }
 }
-
